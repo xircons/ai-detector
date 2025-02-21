@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>AI Detecor tool</h1>
+        <p>powered by Chat GPT 4</p>
+    </div>
+    <div class="container">
+        <div class="column">
+            <textarea id="text-input" placeholder="Enter your text here..."></textarea>
+            <div class="input-footer">
+                <span id="char-count">100 / 5000 characters</span>
+                <button id="detect-ai">Detect AI
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>
+                </button>
+            </div>
+        </div>        
+        <div class="column">
+            <h2>Analysis</h2>
+            <div class="analysis-container">
+                <div class="score-container">
+                    <svg class="progress-circle"
+                         viewBox="0 0 120 120"
+                         xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="60" cy="60" r="50" stroke="#ddd" stroke-width="10" fill="none" />
+                      <circle cx="60" cy="60" r="50" stroke="#28a745" stroke-width="10" fill="none" stroke-dasharray="314" stroke-dashoffset="40" />
+                      <text x="50%" y="50%" text-anchor="middle" dy="0.3em" font-size="20" font-weight="bold">
+                        88%
+                      </text>
+                    </svg>
+                  </div>                  
+                <div class="analysis-right">
+                    <p>Percentage</p>
+                    <hr>
+                    <p><strong>AI-generated</strong><span class="percentage">- %</span></p>
+                    <p><strong>Human-written</strong><span class="percentage">- %</span></p>
+                </div>
+            </div>
+            <div class="summary">
+                <h3>Summary</h3>
+                <p>No text has been provided for analysis.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
